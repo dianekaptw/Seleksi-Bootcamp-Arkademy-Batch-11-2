@@ -1,0 +1,9 @@
+mysql> select nama.name as name, kategori.name as hobby, hobi.name as category
+    -> from nama join hobi ON nama.id_hobby = hobi.id
+    -> join kategori ON nama.id_category = kategori.id;
++------+--------------+-------------+
+| name | hobby        | category    |
++------+--------------+-------------+
+| Novi | Shopping     | Koleksi Tas |
+| Vita | Media Sosial | InstaStory  |
++------+--------------+-------------+
